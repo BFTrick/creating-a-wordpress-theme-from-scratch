@@ -14,10 +14,7 @@
 		<h1 class="blog-title"><a href="/"><?php bloginfo('name');?></a></h1>
 		<div id="site-description"><?php bloginfo('description');?></div>
 		<div>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li ><a href="/about/">About</a></li>
-			</ul>
+			<?php wp_nav_menu(array('menu' => 'primary_menu')); ?>
 		</div>
 	</div>
 	<div class="row">
